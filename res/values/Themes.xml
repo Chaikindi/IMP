@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="My1.Widget.Button.Toggle" parent="android:Widget">
+    <item name="android:background">@drawable/btn_toggle_bg</item>
+    <item name="android:textOn"> </item>
+    <item name="android:textOff"> </item>
+    <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+	</style>
+	
+    <style name="My2.Widget.Button.Toggle" parent="android:Widget">
+    <item name="android:background">@drawable/btn_toggle_bg2</item>
+    <item name="android:textOn"> </item>
+    <item name="android:textOff"> </item>
+    <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+	</style>
+	
+     <style name="Repeat.Widget.Button.Toggle" parent="android:Widget">
+    <item name="android:background">@drawable/btn_toggle_bg_repeat</item>
+    <item name="android:textOn"> </item>
+    <item name="android:textOff"> </item>
+    <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+	</style>
+    
+</resources>

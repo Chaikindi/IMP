@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">maddox player</string>
+    <string name="search_button">Search</string>
+    <string name="hint_atrist_name">Enter artist name</string>
+    <string name="hint_tag">Enter tag</string>
+    <string name="tag_play_button">Play</string>
+    <string name="tag_next_track_button">Next track</string>
+    <string name="tag_prev_track_button">Prev track</string>
+    <string name="random_button">Random Play</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:id="@+id/linear"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/linear2"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/Controls"
+            android:background="#202020">
+
+        <ListView
+                android:id="@+id/SongView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:visibility="visible"
+                >
+
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Controls"
+            android:layout_height="104dp"
+            android:background="#000"
+            android:layout_alignParentBottom="true">
+
+        <ToggleButton
+                android:id="@+id/TogglePlayButton"
+                style="@style/My2.Widget.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+                android:id="@+id/ImageForwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/TogglePlayButton"
+                android:contentDescription="@string/tag_next_track_button"
+                android:minHeight="48dp"
+                android:minWidth="64dp"
+                android:src="@drawable/av_next" />
+
+        <ImageButton
+                android:id="@+id/ImageBackwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/TogglePlayButton"
+                android:contentDescription="@string/tag_prev_track_button"
+                android:minHeight="48dp"
+                android:minWidth="64dp"
+                android:src="@drawable/av_previous" />
+
+        <ToggleButton
+                android:id="@+id/ToggleShuffleButton"
+                style="@style/My1.Widget.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/ImageForwardButton" />
+
+        <ToggleButton
+                android:id="@+id/reparedButton"
+                style="@style/Repeat.Widget.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/ImageBackwardButton" />
+
+        <TextView
+                android:id="@+id/trackTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+                android:id="@+id/cutter"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#33B5E5"
+                android:orientation="vertical" android:layout_alignParentStart="false" android:layout_alignParentEnd="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:measureWithLargestChild="false">
+
+        </LinearLayout>
+        <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar" android:layout_alignParentRight="true" android:layout_alignParentLeft="true"
+                android:layout_below="@+id/trackTextView"/>
+        <ViewSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewSwitcher"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
